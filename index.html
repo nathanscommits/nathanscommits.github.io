@@ -6,70 +6,153 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nathans Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4fe055d923.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
+    <!-- 
+        1. contact info
+        2. skills
+        3. experience
+     -->
+
     <header>
 
-    <h1>I do 3D art & code.</h1>
-  
+    <h1>I make 3D art & code.</h1>
 
+    <span>
+        <a href="https://github.com/nathanscommits"><i class="fa-brands fa-github"></i></a> 
+        <a href="https://www.linkedin.com/in/nathan-burns-b2a266199/"><i class="fa-brands fa-linkedin"></i></i></a> 
+        <a href="https://www.instagram.com/oiitsnath/"><i class="fa-brands fa-instagram"></i></i></a> 
+    </span>
+        
     </header>
 
     <main>
 
        <section>
         <div class="container" id="about">
-            I'm Nathan.
-            I'm a software developer based on the east coast of Australia.
-            I love solving problems and creating art. 
-            I never stop learning new things.
-            I have recently started learning about Three.js because I enjoy web development and 3d art, so it makes sense!
-        </div>
+            <h2>Nathan Burns</h2>
+            <p><i class="fa-solid fa-envelope"> </i> nathnbrns@gmail.com</p>
+            <p><i class="fa-brands fa-discord"></i> Burnsy#5286</p>
+            <p><i class="fa-solid fa-location-dot"></i> QLD, Australia</p>
+            <p>I'm a software developer with 5 years experience.<br>
+                I love solving problems and creating art. I never stop learning new things.</p>
+
+              <div class="flex"> <div>
+                <h2>Tech</h2>
+                <ul>
+                 <li>Javascript</li>
+                 <li>Nodejs</li>
+                 <li>Express</li>
+                 <li>HTML5/CSS</li>
+                 <li>MongoDB</li>
+                 <li>C++</li>
+                </ul>
+               </div>
+      <div>
+        <h2>Tools</h2>
+        <ul>
+         <li>VScode</li>
+         <li>Blender</li>
+         <li>Photoshop</li>
+         <li>Gimp</li>
+         <li>Inkscape</li>
+         <li>Marvelous Designer</li>
+        </ul>
+      </div></div>
+              
+
+       <h1>Experience 2022</h1>
+       <ul>
+        <li><b>Multi-school remote classroom - Full Stack, solo developer - 3 months</b><br>
+            <ul>
+                <li>Dynamically changes page content based on login infomation (ie student/teacher/admin and their particular school info).</li>
+                <li>Populates mongoDB through google sheets API for easily adding new course materials and changing page content without needing a developer.</li>
+                <li>Websocket notification updates with automated emailing.</li>
+                <li>Student file uploads using google cloud api.</li>
+            </ul>
+        </li>
+        <br>
+        <li><b>Certificate generator - Full Stack, solo developer - 1 month</b><br>
+            <ul>
+                <li>Generates a PDF or PNG certificate image using form infomation.</li>
+                <li>Leverages google auth for easy account managment.</li>
+                <li>Differently styles certificate based on form data.</li>
+                <li>Saves a record of every certificate issue to google sheets.</li>
+            </ul>
+        </li>
+
+       
+
+       </ul>
+        </div> 
        </section>
 
 
        
+
+<hr>
+       
 <section id="threeDArt">
    <div class="container">
     <h1>3D art</h1>
-    I feel comfortable working with Blender, Photoshop, Gimp, Inkscape and I know my way around Marvelous Designer, Mixer and ZBrush.
-    I have worked in many areas of 3D art. Character modeling, archetecture, landscapes, props, shaders, skinning/rigging, animation, lighting/rendering, physics/cloth sim, you name it!
+    <p>    I have worked in many areas of 3D art. Character modeling, archetecture, landscapes, props, shaders, skinning/rigging, animation, lighting/rendering, physics/cloth sim, you name it!
+    </p>   
     
-        <div class="img-container">
-            <img src="public/securitron.png" alt="" srcset="">
-        <img src="public/securitron.gif" alt="" srcset="">
-        <img src="public/hatman.gif" alt="" srcset="">
-        <img src="public/church.png" alt="" srcset="">
-        <img src="public/mandelbulb.png" alt="" srcset="">
-        <img src="public/mars.jpg" alt="" srcset="">
-        <img src="public/shark.gif" alt="" srcset="">
-        <img src="public/robot-arm.png" alt="" srcset="">
-        <img src="public/robot-bust.png" alt="" srcset="">
-        <img src="public/sci-fi-gun.png" alt="" srcset="">
+      
+        <div class="gallery-wrap">
+            <div style="background-image: url('https://cdn.discordapp.com/attachments/977362255094099998/980258830355165296/unknown.png');" class="item"></div>
+          <div style="background-image: url('public/securitron.png');" class="item"></div>
+          <div style="background-image: url('public/securitron.gif');" class="item"></div>
+          <div style="background-image: url('public/hatman.gif');" class="item"></div>
+          <div style="background-image: url('public/church.png');" class="item"></div>
+          <div style="background-image: url('public/mandelbulb.png');" class="item"></div>
         </div>
+        <div class="gallery-wrap">
+          <div style="background-image: url('public/mars.jpg');" class="item"></div>
+          <div style="background-image: url('public/shark.gif');" class="item"></div>
+          <div style="background-image: url('public/robot-bust.png');" class="item"></div>
+          <div style="background-image: url('public/sci-fi-gun.png');" class="item"></div>
+          <div style="background-image: url('https://cdn.discordapp.com/attachments/977362255094099998/980601376289751040/unknown.png');" class="item"></div>
+        </div>
+       
+    
+       
 
    </div>
    </section>
+   
+   <hr>
    <section id="programming">
     <div class="container">
 
-        <h1>Programming</h1>
-        <p>For the front-end I mostly work with Javascript, standalone or sometimes with frameworks like ReactJS. I also enjoy working with CSS.
-            For the back-end I use Javascript (NodeJS, Express, MongoDB, etc). </p> <p> <a href="https://github.com/nathanscommits">My Github</a> </p>
-    
-            <div class="img-container">
-                <img src="public/HUD designConcepts.gif" alt="" srcset="">
-                <img src="public/API_controllers.gif" alt="" srcset="">
-                <img src="public/sim HUD design.PNG" alt="" srcset="">
+        <h1>Game Dev</h1>
+         
+           <p> I've worked on several game HUD api's designed to enhance and assist in tabletop rpg's like DnD. Used in combination with sandbox games like secondlife, VRchat or garrys mod.
+            They are basically fancy character sheets.</p>
+
+            <ul>
+                <li>Robust inventory systems</li>
+                <li>Multiplayer / pvp interactions</li>
+                <li>Trading, looting, currencies, shops</li>
+                <li>Character stats, skills, exp, levels, power growth</li>
+            </ul>
+
+            
+            <div class="programming-wrap">
+                <div style="background-image: url('public/HUD designConcepts.gif');" class="project"></div>
+                <div style="background-image: url('public/API_controllers.gif');" class="project"></div>
+                <div style="background-image: url('public/sim HUD design.PNG');" class="project"></div>
             </div>
     </div>
         </section>
 
-        <section id="UE">
+        <!-- <section id="UE">
             <div class="container">
                 <h1>Unreal Engine</h1>
           
+                I've made some simple shaders and done some AI coding.
            
             <div class="img-container">
                 <img src="public/grasstreeshader.gif" alt="" srcset=""> 
@@ -87,7 +170,7 @@
                 </div>
             </div>
            
-            </section>
+            </section> -->
 
     </main>
     
