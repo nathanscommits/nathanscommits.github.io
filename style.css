@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
+@font-face {
+    font-family: perfectdos;
+    src: url(public/Perfect\ DOS\ VGA\ 437\ Win.ttf);
+}
+
 * {
     box-sizing: border-box;
 }
@@ -11,17 +16,19 @@ html {
 body {
     margin: 0;
     padding: 0;
-    background: #edede9;
-    color: #6d6875;
+    background: #211f1f;
+    color: #ababab;
     font-family: 'Lato', sans-serif;
+    font-family: perfectdos;
     overflow-y: scroll;
     overflow-x: hidden;
     font-size: 1.2rem;
 }
 
-main, section {
-   padding: 0;
-   margin: 0;
+main,
+section {
+    padding: 0;
+    margin: 0;
 }
 
 main {
@@ -42,6 +49,7 @@ main {
     display: flex;
     flex-wrap: nowrap;
 }
+
 .flex div {
     width: 50%;
 }
@@ -50,7 +58,7 @@ li ul li {
     font-size: 1rem;
 }
 
-li b{
+li b {
     font-size: 1.8rem;
 }
 
@@ -58,7 +66,8 @@ li b{
     height: 250px;
     width: auto;
 }
-.img-container{
+
+.img-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -77,14 +86,18 @@ li b{
 header {
     height: 100px;
     width: 100%;
-    background: #d5bdaf;
+    background: #372c38;
     position: fixed;
     overflow: hidden;
     top: 0;
-    color: #edede9;
+    color: #7a7272;
     padding-left: 50px;
     line-height: 25px;
     font-size: 1.5rem;
+}
+
+main a {
+    color: #7a7272;
 }
 
 header span {
@@ -93,30 +106,34 @@ header span {
     right: 50px;
 }
 
+header span i {
+    color: #7a7272;
+}
+
 header img {
     height: 50px;
     width: 50px;
     display: block;
     margin: auto;
 }
-  
-  
-  .gallery-wrap {
+
+
+.gallery-wrap {
     display: flex;
     flex-direction: row;
     width: 100%;
     height: 750px;
-  }
-  
-  .programming-wrap {
+}
+
+.programming-wrap {
     display: flex;
     flex-direction: row;
     width: 100%;
     height: 750px;
-  }
-  
-  .item {
-    background-color: #6d6875;
+}
+
+.item {
+    background-color: #ababab;
     flex: 1;
     height: 100%;
     background-position: center;
@@ -124,22 +141,21 @@ header img {
     background-repeat: none;
     transition: flex 0.8s ease;
 }
-  .project {
-    flex:1;
+
+.project {
+    flex: 1;
     height: 100%;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
     transition: flex 0.8s ease;
 }
-.project:hover{
-    flex:7;
-    
+
+.project:hover {
+    flex: 7;
+
 }
 
-.item:hover{
-  flex: 7;
+.item:hover {
+    flex: 7;
 }
-  
-  
-  
