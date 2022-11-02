@@ -96,6 +96,8 @@ header {
     font-size: 1.5rem;
 }
 
+
+
 main a {
     color: #7a7272;
 }
@@ -158,4 +160,19 @@ header img {
 
 .item:hover {
     flex: 7;
+}
+
+#about {
+    display: flex;
+}
+
+#info {
+    width: 50%;
+}
+
+#portrait {
+    background-image: url('public/Nathans\ AI\ photo.gif');
+    width: 50%;
+    border-radius: 25px;
+    border: #372c38 solid .3rem;
 }
